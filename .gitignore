@@ -1,0 +1,34 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Aa]rtifacts/
+TestResults/
+BenchmarkDotNet.Artifacts/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Local configuration and secrets
+appsettings.*.local.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.snk
+
+# Logs, local database files, and OS files
+*.log
+logs/
+*.mdf
+*.ldf
+*.ndf
+Thumbs.db
+Desktop.ini
+.DS_Store

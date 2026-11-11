@@ -1,0 +1,22 @@
+@host = http://localhost:5080
+
+### One order, normal LINQ. On a fresh Development database, order 1 belongs to Ava Patel.
+GET {{host}}/api/orders/1/normal
+
+### The same order through the compiled query. The JSON should match the normal call.
+GET {{host}}/api/orders/1/compiled
+
+### Missing order.
+GET {{host}}/api/orders/999999/normal
+
+### Orders for customer 1, normal LINQ.
+GET {{host}}/api/customers/1/orders/normal
+
+### Orders for customer 1, async compiled query.
+GET {{host}}/api/customers/1/orders/compiled
+
+### What the benchmark measures. This response does not contain timing numbers.
+GET {{host}}/api/benchmark-info
+
+### Swagger UI
+GET {{host}}/swagger/index.html
